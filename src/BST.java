@@ -129,6 +129,7 @@ public class BST {
             for (BSTNode n : inorder) {
                 if (n.getVal() > val) {
                     BSTNode newv = new BSTNode(val);
+                    setRoot(newv);
                     inorder.set(inorder.indexOf(n), newv);
                     break;
                 }
